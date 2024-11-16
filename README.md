@@ -10,6 +10,7 @@ Este projeto é um gerador de currículo simples e moderno que permite criar cur
 - **Campos de Currículo Customizáveis:** Permite a personalização de informações, como nome, contato, experiência profissional, formação acadêmica, competências e idiomas.
 - **Animações e Transições:** Inclui animações suaves para interações com o usuário, criando uma experiência mais agradável.
 - **Baseado em HTML, CSS e JavaScript:** O código é totalmente baseado em tecnologias da web padrão e não requer back-end ou outras dependências externas.
+- **Comentários Explicativos:** O código contém comentários detalhados para ajudar a entender cada parte da implementação, facilitando a personalização e manutenção do projeto.
 
 ## Como Usar
 
