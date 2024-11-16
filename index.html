@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Currículo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho com título e botão para alternar entre modo claro e escuro -->
+    <header>
+      <h1 class="fade-in">Gerador de Currículo</h1>
+      <button id="theme-toggle" class="theme-toggle">
+        🌞
+      </button>
+    </header>
+    <p class="fade-in">Preencha as informações abaixo para criar seu currículo personalizado.</p>
+
+    <!-- Formulário para preencher as informações do currículo -->
+    <form id="curriculum-form" class="slide-up">
+      <!-- Seção de Informações Pessoais -->
+      <h2>Informações Pessoais</h2>
+      <div class="form-group">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="linkedin">LinkedIn (opcional):</label>
+        <input type="url" id="linkedin">
+      </div>
+
+      <!-- Seção de Resumo Profissional -->
+      <h2>Resumo Profissional</h2>
+      <div class="form-group">
+        <textarea id="summary" rows="4" placeholder="Escreva um breve resumo sobre sua carreira"></textarea>
+      </div>
+
+      <!-- Seção de Experiência Profissional -->
+      <h2>Experiência Profissional</h2>
+      <div id="experience-fields">
+        <div class="experience">
+          <div class="form-group">
+            <label>Cargo:</label>
+            <input type="text" class="job-title" placeholder="Ex.: Editor Chefe" required>
+          </div>
+
+          <div class="form-group">
+            <label>Empresa:</label>
+            <input type="text" class="company" placeholder="Ex.: O Globo" required>
+          </div>
+
+          <div class="form-group">
+            <label>Período:</label>
+            <input type="text" class="period" placeholder="Ex.: Janeiro 2017 – Atual" required>
+          </div>
+
+          <div class="form-group">
+            <label>Responsabilidades:</label>
+            <textarea class="responsibilities" rows="3" placeholder="Liste até 3 responsabilidades"></textarea>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="add-experience" class="btn-secondary">Adicionar Experiência</button>
+
+      <!-- Seção de Educação -->
+      <h2>Educação</h2>
+      <div class="form-group">
+        <label>Formação:</label>
+        <input type="text" id="education" placeholder="Ex.: Bacharel em Jornalismo" required>
+      </div>
+
+      <div class="form-group">
+        <label>Instituição:</label>
+        <input type="text" id="institution" placeholder="Ex.: Universidade Veiga de Almeida" required>
+      </div>
+
+      <div class="form-group">
+        <label>Período:</label>
+        <input type="text" id="education-period" placeholder="Ex.: 2006 – 2009" required>
+      </div>
+
+      <!-- Seção de Idiomas -->
+      <h2>Idiomas</h2>
+      <div class="form-group">
+        <textarea id="languages" rows="3" placeholder="Ex.: Inglês fluente"></textarea>
+      </div>
+
+      <!-- Seção de Competências -->
+      <h2>Competências</h2>
+      <div class="form-group">
+        <textarea id="skills" rows="3" placeholder="Liste suas competências"></textarea>
+      </div>
+
+      <!-- Botão para gerar o currículo -->
+      <button type="submit" class="btn-primary">Gerar Currículo</button>
+    </form>
+
+    <!-- Resultado gerado após o preenchimento do formulário -->
+    <div id="curriculum-output" class="hidden fade-in">
+      <h1 id="output-name"></h1>
+      <p id="output-contact"></p>
+      <p id="output-summary"></p>
+      <h2>Experiência Profissional</h2>
+      <ul id="output-experience"></ul>
+      <h2>Educação</h2>
+      <p id="output-education"></p>
+      <h2>Idiomas</h2>
+      <p id="output-languages"></p>
+      <h2>Competências</h2>
+      <p id="output-skills"></p>
+    </div>
+
+    <footer>
+      <p class="footer-text">Made by Ketener</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
